@@ -239,9 +239,3 @@ class DjangoEmailEngine(EmailEngine):
         else:
             print("Email Sent")
 
-
-email_engine_factory = {
-    "DJANGO": DjangoEmailEngine,
-    "POSTMARK": PostmarkEmailEngine,
-    "AWSSES": AWSSESEmailEngine,
-}
